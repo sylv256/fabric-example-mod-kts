@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "${mod_id}",
 	"version": "${version}",
 	"name": "Example mod",
 	"description": "This is an example description! Tell everyone what your mod is about!",
@@ -11,15 +11,15 @@
 		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
-	"license": "CC0-1.0",
+	"license": "${mod_license}",
 	"icon": "assets/modid/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
+			"gay.sylv.modid.ExampleMod"
 		],
 		"client": [
-			"com.example.ExampleModClient"
+			"gay.sylv.modid.ExampleModClient"
 		]
 	},
 	"mixins": [

@@ -1,0 +1,38 @@
+[versions]
+# The latest versions are available at https://lambdaurora.dev/tools/import_quilt.html
+# https://fabricmc.net/develop/ for fabric
+
+# Base
+minecraft = "1.21.11"
+parchment = "2025.10.12"
+parchment-minecraft = "1.21.10"
+fabric_loader = "0.18.1"
+
+# Libraries
+fabric_api = "0.139.5+1.21.11"
+jspecify = "1.0.0"
+
+# Mod Integrations
+
+# Runtime Mods
+modmenu = "17.0.0-alpha.1"
+
+[libraries]
+# Base
+minecraft = { module = "com.mojang:minecraft", version.ref = "minecraft" }
+fabric_loader = { module = "net.fabricmc:fabric-loader", version.ref = "fabric_loader" }
+
+# Libraries
+fabric_api = { module = "net.fabricmc.fabric-api:fabric-api", version.ref = "fabric_api" }
+jspecify = { module = "org.jspecify:jspecify", version.ref = "jspecify" }
+
+# Mod Integrations
+
+# Runtime Mods
+modmenu = { module = "com.terraformersmc:modmenu", version.ref = "modmenu" }
+
+# If you have multiple similar dependencies, you can declare a dependency bundle and reference it on the build script with "libs.bundles.example".
+[bundles]
+
+[plugins]
+fabric_loom = { id = "fabric-loom", version = "1.14-SNAPSHOT" }
